@@ -3,6 +3,9 @@
 # imgaes don't upload
 /images/*.png
 
+# private file
+/config/account.js
+
 # dependencies
 /node_modules
 /.pnp
