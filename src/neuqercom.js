@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const promisify = require('util').promisify;
 const mkdir = promisify(fs.mkdir);
 const readdir = promisify(fs.readdir);
-const msg = require('./../config/account');
+const msg = require('../config/account');
 
 const { screenshot } = require('../config/defaultConfig');
 
