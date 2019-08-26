@@ -17,13 +17,13 @@ const { msg } = require('../config/account');
   })
 
   let changeLogin = await page.$('.SignFlow-tabs div')
-  console.log(changeLogin);
+  // console.log(changeLogin);
   // await changeLogin.click({delay:20});
   await page.screenshot({path: 'example.png'});
   
   await page.close();
-  // await page.type('#account',msg.mobile,{delay:20});
-  // await page.type('#passwd',msg.password,{delay:20});
+  await page.type('#account',msg.mobile,{delay:20});
+  await page.type('#passwd',msg.password,{delay:20});
 
   // await sleep(3000);
 })()
